@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Payment form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Pay</h1>
+<form action="#" th:action="@{/api/payment}" th:object="${payment}" method="post">
+    <p>Amount: <input type="text" th:field="*{amount}" /></p>
+    <p><input type="submit" value="Pay" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
